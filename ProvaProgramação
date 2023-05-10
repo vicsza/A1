@@ -1,0 +1,11 @@
+nome= input('Digite seu nome: ')
+kg= float(input('Digite seu peso em kg: '))
+agua= float(input('Digite quantos ml de água você ingeriu hoje:'))
+aguaideal= (kg * 35)/1000
+aguaarredondado= round(aguaideal,2)
+print('A quatidade de água ideal para você ingerir é',aguaarredondado, 'litros.')
+ingerirdia= (aguaarredondado - agua)
+if ingerirdia < 0:
+  print('Parabéns, você atingiu a meta de hidratação diária!')
+elif ingerirdia > 0:
+  print('Continue focado em se hidratar por hoje, ainda faltam', ingerirdia, 'litros! Você consegue!')
