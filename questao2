@@ -1,0 +1,17 @@
+placa= input('Digite sua placa do carro: ')
+gas= float(input('Digite o litro do combustível: '))
+km60= float(input('Digite a quantidade de km rodados a 60Km/h: '))
+km80= float(input('Digite a quantidade de km rodados a 80Km/h: '))
+km100= float(input('Digite a quantidade de km rodados a 100Km/h: '))
+km120= float(input('Digite a quantidade de km rodados a 120Km/h: '))
+km140= float(input('Digite a quantidade de km rodados a 140Km/h: '))
+totalkm = km60 + km80 + km100 + km120 + km140
+totalkilo= round(totalkm, 2)
+velmedia = (km60 * 60 + km80 * 80 + km100 * 100 + km120 * 120 + km140 * 140) / totalkm
+veltotal= round(velmedia, 2)
+gastotal= totalkm / 1 * gas #defini o gasto de gasolina como 1 litro por km
+gasarre= round(gastotal, 2)
+print(placa)
+print('Total de quilômetros rodados:', totalkilo,'km')
+print('Custo estimado da viagem: R$', gasarre)
+print('Velocidade média ponderada: ',veltotal,  'km/h')
